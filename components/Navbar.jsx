@@ -15,17 +15,21 @@ function Navbar() {
             <Link href="/generate">
               <li>Generate icon</li>
             </Link>
-            <Link href="pricing">
+            <Link href="/pricing">
               <li>Pricing</li>
             </Link>
           </ul>
           <div className="flex justify-center items-center gap-2">
-            <button className="border-pink-400 border-2 rounded-md py-2 px-4 cursor-pointer">
-              Login In
-            </button>
-            <button className="rounded-md py-2 px-4 bg-pink-400 text-white cursor-pointer">
-              Sign Up
-            </button>
+            <Link href="/login">
+              <button className="border-pink-400 border-2 rounded-md py-2 px-4 cursor-pointer">
+                Log In
+              </button>
+            </Link>
+            <Link href="/signup">
+              <button className="rounded-md py-2 px-4 bg-pink-400 text-white cursor-pointer">
+                Sign Up
+              </button>
+            </Link>
           </div>
         </nav>
       </header>
