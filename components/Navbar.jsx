@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import RightArrow from "@/icons/RightArrow";
 
 function Navbar() {
   return (
@@ -21,13 +22,13 @@ function Navbar() {
           </ul>
           <div className="flex justify-center items-center gap-2">
             <Link href="/login">
-              <button className="border-pink-400 border-2 rounded-md py-2 px-4 cursor-pointer">
-                Log In
+              <button className="flex gap-2 border-pink-400 border-2 rounded-md py-2 px-4 cursor-pointer">
+                Log In <RightArrow className="text-black"/>
               </button>
             </Link>
             <Link href="/signup">
-              <button className="rounded-md py-2 px-4 bg-pink-400 text-white cursor-pointer">
-                Sign Up
+              <button className="gap-2 flex rounded-md py-2 px-4 bg-pink-400 text-white cursor-pointer">
+                Sign Up <RightArrow />
               </button>
             </Link>
           </div>
